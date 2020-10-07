@@ -49,6 +49,7 @@ export class CacheBehavior {
         queryString: this.props.forwardQueryString ?? false,
         queryStringCacheKeys: this.props.forwardQueryStringCacheKeys,
       },
+      originRequestPolicyId: this.props.originRequestPolicy?.originRequestPolicyId,
       smoothStreaming: this.props.smoothStreaming,
       viewerProtocolPolicy: this.props.viewerProtocolPolicy ?? ViewerProtocolPolicy.ALLOW_ALL,
       lambdaFunctionAssociations: this.props.edgeLambdas
